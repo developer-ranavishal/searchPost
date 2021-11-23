@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/enterPincodeScreen">
+
+    <fragment
+        android:id="@+id/enterPincodeScreen"
+        android:name="com.example.searchpost.view.EnterPincodeScreen"
+        android:label="Enter PinCode"
+        tools:layout="@layout/fragment_enter_pincode_screen">
+        <action
+            android:id="@+id/action_enterPincodeScreen_to_postOfficeListScreen"
+            app:destination="@id/postOfficeListScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/postOfficeListScreen"
+        android:name="com.example.searchpost.view.PostOfficeListScreen"
+        android:label="list of Post Office"
+        tools:layout="@layout/fragment_post_office_list_screen" />
+</navigation>
